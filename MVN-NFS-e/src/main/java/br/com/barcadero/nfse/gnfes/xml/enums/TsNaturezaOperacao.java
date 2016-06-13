@@ -1,5 +1,9 @@
 package br.com.barcadero.nfse.gnfes.xml.enums;
 
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Código de natureza da operação 
    1 – Tributação no município 
@@ -13,12 +17,14 @@ package br.com.barcadero.nfse.gnfes.xml.enums;
  * @author root
  *
  */
+@XmlType
+@XmlEnum
 public enum TsNaturezaOperacao {
 	
-	TRIB_MUNICIPIO,
-	TRIB_FORA_MUNICIPIO,
-	ISENCAO,
-	IMUNE,
-	SUSPENSA_LEGAL,
-	SUSPENSA_ADMINISTRATIVO
+	@XmlEnumValue("1") TRIB_MUNICIPIO,
+	@XmlEnumValue("2") TRIB_FORA_MUNICIPIO,
+	@XmlEnumValue("3") ISENCAO,
+	@XmlEnumValue("4") IMUNE,
+	@XmlEnumValue("5") SUSPENSA_LEGAL,
+	@XmlEnumValue("6") SUSPENSA_ADMINISTRATIVO
 }
