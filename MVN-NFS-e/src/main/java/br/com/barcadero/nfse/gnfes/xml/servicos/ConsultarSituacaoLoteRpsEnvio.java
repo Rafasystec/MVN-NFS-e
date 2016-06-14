@@ -1,4 +1,4 @@
-package br.com.barcadero.nfse.gnfes.xml.rps.consulta;
+package br.com.barcadero.nfse.gnfes.xml.servicos;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,6 +7,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import br.com.barcadero.nfse.gnfes.xml.complexos.TcIdentificacaoPrestador;
 /**
+ * 3.5.2 Consulta de Situação de Lote de RPS
+	Esse serviço será executado através da chamada ao método
+	ConsultarSituacaoLoteRps, passando a mensagem XML como parâmetro
+	com a estrutura definida na tabela que segue.
+	
  *  Esse serviço será executado através da chamada ao método
 	ConsultarSituacaoLoteRps, passando a mensagem XML como parâmetro
 	com a estrutura definida na tabela que segue.

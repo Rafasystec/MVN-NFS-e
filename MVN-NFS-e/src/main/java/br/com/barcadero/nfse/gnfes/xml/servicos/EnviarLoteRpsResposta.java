@@ -1,10 +1,14 @@
-package br.com.barcadero.nfse.gnfes.xml.rps.envio;
+package br.com.barcadero.nfse.gnfes.xml.servicos;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * Resposta do servico RecepcionarLoteRps {@link EnviarLoteRpsEnvio}
+ * @author Rafael Rocha
+ *
+ */
 @XmlRootElement(name="EnviarLoteRpsResposta")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class EnviarLoteRpsResposta {
