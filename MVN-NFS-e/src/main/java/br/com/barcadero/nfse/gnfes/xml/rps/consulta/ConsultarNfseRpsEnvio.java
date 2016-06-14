@@ -6,33 +6,26 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import br.com.barcadero.nfse.gnfes.xml.complexos.TcIdentificacaoPrestador;
-/**
- *  Esse serviço será executado através da chamada ao método
-	ConsultarSituacaoLoteRps, passando a mensagem XML como parâmetro
-	com a estrutura definida na tabela que segue.
- * @author root
- *
- */
-@XmlRootElement(name="ConsultarSituacaoLoteRpsEnvio")
-@XmlAccessorType(XmlAccessType.FIELD)
-public class ConsultarSituacaoLoteRpsEnvio {
+import br.com.barcadero.nfse.gnfes.xml.complexos.TcIdentificacaoRps;
 
+@XmlRootElement(name="ConsultarNfseRpsEnvio")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class ConsultarNfseRpsEnvio {
+	@XmlElement(name="IdentificacaoRps")
+	private TcIdentificacaoRps identificacaoRps;
 	@XmlElement(name="Prestador")
 	private TcIdentificacaoPrestador prestador;
-	@XmlElement(name="Protocolo")
-	private String protocolo;
-	
+	public TcIdentificacaoRps getIdentificacaoRps() {
+		return identificacaoRps;
+	}
+	public void setIdentificacaoRps(TcIdentificacaoRps identificacaoRps) {
+		this.identificacaoRps = identificacaoRps;
+	}
 	public TcIdentificacaoPrestador getPrestador() {
 		return prestador;
 	}
 	public void setPrestador(TcIdentificacaoPrestador prestador) {
 		this.prestador = prestador;
-	}
-	public String getProtocolo() {
-		return protocolo;
-	}
-	public void setProtocolo(String protocolo) {
-		this.protocolo = protocolo;
 	}
 	
 	
