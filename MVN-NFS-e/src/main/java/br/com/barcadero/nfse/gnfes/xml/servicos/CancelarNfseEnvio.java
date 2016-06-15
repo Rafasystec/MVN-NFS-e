@@ -29,4 +29,5 @@ public class CancelarNfseEnvio {
 	public void setPedido(TcPedidoCancelamento pedido) {
 		this.pedido = pedido;
 	}
+
 }
